@@ -1,2 +1,2 @@
 # Scoop
-Information ingestion app
+A personalized recommendation and news injestion tool
