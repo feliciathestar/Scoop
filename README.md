@@ -1,2 +1,2 @@
 # Scoop
-A personalized recommendation and news injestion tool
+A personalized recommendation and news ingestion tool
