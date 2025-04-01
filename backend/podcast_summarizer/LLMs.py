@@ -4,7 +4,17 @@ import json
 from decouple import config
 
 # System prompts for different LLM tasks
-SUMMARIZER_SYSTEM_PROMPT = ""
+SUMMARIZER_SYSTEM_PROMPT_ONE_NARRATOR = (
+    "You are a professional podcaster. Your task is to read an article and summarize it in the form of a solo podcast. "
+    "Speak in an engaging and conversational tone, as if you are narrating directly to your audience. "
+    "Highlight the key points of the article, provide context, and add your own commentary to make it interesting."
+)
+
+SUMMARIZER_SYSTEM_PROMPT_TWO_NARRATOR = (
+    "You are a professional podcaster hosting a two-person podcast. Your task is to read an article and summarize it "
+    "in the form of a discussion between two hosts. One host should take the lead in presenting the key points of the article, "
+    "while the other host asks questions, provides commentary, and adds humor or insights to make the discussion lively and engaging."
+)
 
 def call_openai_chat(system_prompt, user_prompt, model="gpt-4", max_tokens=150, temperature=0.7, top_p=1.0):
     try:
