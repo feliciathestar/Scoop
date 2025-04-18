@@ -1,4 +1,4 @@
-from LLMs import *
+from models import *
 import requests
 import json
 

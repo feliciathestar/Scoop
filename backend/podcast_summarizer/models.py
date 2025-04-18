@@ -3,6 +3,7 @@ import requests
 import json
 from decouple import config
 
+# ----- LLMs ----- 
 # System prompts for different LLM tasks
 SUMMARIZER_SYSTEM_PROMPT_ONE_NARRATOR = (
     "You are a professional podcaster. Your task is to read an article and summarize it in the form of a solo podcast. "
@@ -66,3 +67,80 @@ def strip_to_json(text):
     if start != -1 and end != -1 and end > start:
         return text[start:end+1]
     return ""
+
+# ----- TTS -----
+def call_xtts_silly_cavern(text, speaker="en_speaker_9", output_path=None, language="en", speed=1.0):
+    """
+    Generates speech from text using the XTTS silly cavern model.
+    
+    Args:
+        text (str): The text to convert to speech
+        speaker (str): The speaker voice to use
+        output_path (str): Path to save the audio file (if None, returns audio data)
+        language (str): The language code (default: "en")
+        speed (float): Speech speed multiplier
+        
+    Returns:
+        str or bytes: Path to saved audio file or audio data
+    """
+    try:
+        url = "http://localhost:8000/tts"  # Adjust URL based on your XTTS silly cavern deployment
+        
+        payload = {
+            "text": text,
+            "speaker": speaker,
+            "language": language,
+            "speed": speed
+        }
+        
+        response = requests.post(url, json=payload)
+        response.raise_for_status()
+        
+        if output_path:
+            # Save audio file to the specified path
+            with open(output_path, "wb") as f:
+                f.write(response.content)
+            return output_path
+        else:
+            # Return audio data directly
+            return response.content
+            
+    except Exception as e:
+        return f"TTS Error: {e}"
+
+def call_openai_tts(text, voice="alloy", output_path=None, model="tts-1-hd", speed=1.0):
+    """
+    Generates speech from text using OpenAI's latest TTS model.
+    
+    Args:
+        text (str): The text to convert to speech
+        voice (str): Voice to use (options: alloy, echo, fable, onyx, nova, shimmer)
+        output_path (str): Path to save the audio file (if None, returns audio data)
+        model (str): TTS model to use ("tts-1" or "tts-1-hd")
+        speed (float): Speech speed multiplier (0.25 to 4.0)
+        
+    Returns:
+        str or bytes: Path to saved audio file or audio data
+    """
+    try:
+        openai.api_key = config('OPENAI_API_KEY')
+        
+        response = openai.audio.speech.create(
+            model=model,
+            voice=voice,
+            input=text,
+            speed=speed
+        )
+        
+        if output_path:
+            # Save audio file to the specified path
+            with open(output_path, "wb") as file:
+                file.write(response.read())
+            return output_path
+        else:
+            # Return audio data directly
+            return response.read()
+            
+    except Exception as e:
+        return f"OpenAI TTS Error: {e}"
+
