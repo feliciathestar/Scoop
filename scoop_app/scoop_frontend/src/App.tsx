@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'aos/dist/aos.css';
 
@@ -12,6 +14,8 @@ const App: React.FC = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         {/* Add more routes as needed */}
       </Routes>
       <Footer />

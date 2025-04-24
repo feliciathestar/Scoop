@@ -2,10 +2,8 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import Typewriter from 'typewriter-effect/dist/core';
 import HeroSection from '../components/sections/HeroSection';
-import ImageHeroSection from '../components/sections/ImageHeroSection';
-import PricingSection from '../components/sections/PricingSection';
-import ArticlesSection from '../components/sections/ArticlesSection';
 import CTASection from '../components/sections/CTASection';
+import PricingSection from '../components/sections/PricingSection';
 
 const Home: React.FC = () => {
   useEffect(() => {
@@ -20,8 +18,11 @@ const Home: React.FC = () => {
       });
       
       typewriter
-        .typeString('A personalized recommendation and news ingestion tool')
-        .pauseFor(5000)
+        .typeString('Stay up-to-date')
+        .pauseFor(1000)
+        .deleteAll()
+        .typeString('Listen on the move')
+        .pauseFor(1000)
         .start();
     }
   }, []);
@@ -29,10 +30,8 @@ const Home: React.FC = () => {
   return (
     <main>
       <HeroSection />
-      <ImageHeroSection />
-      <PricingSection />
-      <ArticlesSection />
       <CTASection />
+      <PricingSection />
     </main>
   );
 };
