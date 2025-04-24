@@ -6,7 +6,7 @@ const HeroSection: React.FC = () => {
     <section id="hero" className="bg-gradient-to-b from-black to-slate-950">
       <div className="mx-auto sm:px-7 px-4 max-w-screen-xl">
         <div className="gap-x-6 px-4 py-16 mx-auto lg:grid xl:px-0 lg:grid-cols-12">
-          <h1 id="typing" className="font-sans font-semibold text-gray-600 lg:col-span-12">
+          <h1 id="typing" className="font-sans font-semibold text-gray-500 lg:col-span-12">
             Personalized Industry News
           </h1>
           <div data-aos="fade-down" data-aos-delay="50" className="mt-3 text-white lg:col-span-8 lg:mt-6">
