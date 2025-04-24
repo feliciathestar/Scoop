@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
         </div>
         
         <div className="flex justify-center pb-16">
-          <Link to="/login" className="bg-purple-500 text-white font-bold py-3 px-8 rounded-3xl hover:bg-purple-600 transition-colors">
+          <Link to="/signup" className="bg-purple-500 text-white font-bold py-3 px-8 rounded-3xl hover:bg-purple-600 transition-colors">
             Get started for free
           </Link>
         </div>
