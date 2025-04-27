@@ -1,0 +1,109 @@
+Host 1:
+Alright, welcome back everyone. Today’s show is packed — I mean absolutely loaded — with the wildest updates from AI, tech, and venture land. You’re gonna want to strap in for this one.
+
+Host 2:
+I’m already strapped in. Hit me. I’m ready for the chaos.
+
+Host 1:
+Alright, let’s start with something that sounds small but is actually huge — Google announced new versions of their Gemma 3 model. Used to need a monster H100 GPU, now it can run on a desktop GPU thanks to some wizardry called quantization-aware training. Basically, they squeezed the model down without killing the quality.
+
+Host 2:
+So you’re telling me my gaming PC can now run cutting-edge AI? Guess it’s time to uninstall Call of Duty and start training models instead.
+
+Host 1:
+Exactly. Now pivoting to creativity — apparently AI is already more creative than 90% of humans. Right now. Not in 10 years, not next decade — today.
+
+Host 2:
+That feels offensive, but like... also kinda accurate? Have you seen some people’s TikToks?
+
+Host 1:
+Haha, yeah, it tracks. And to make it spicier — people are saying it’s only a matter of time before Apple buys OpenAI... or OpenAI buys Apple.
+
+Host 2:
+Imagine Tim Cook showing up for a meeting and Sam Altman’s already sitting in his chair.
+
+Host 1:
+Right? "New CEO, who dis?"
+Meanwhile, Trump signed an executive order ensuring kids are trained in AI. Not just STEM. AI specifically.
+
+Host 2:
+Kindergartners about to be out here doing prompt engineering while I’m still figuring out which way the HDMI cable goes in.
+
+Host 1:
+And it’s not just political noise either — trillions of dollars are getting poured into AI infrastructure. Whether you like it or not, AI is the main event.
+
+Host 2:
+Speaking of which — programmers. Paul Graham weighed in. He says programmers won’t disappear, but if you think nothing will change, you’re living in fantasyland. It’s about having agency now. Not just typing code, but making moves, owning problems.
+
+Host 1:
+Yeah, basically: "Can you build real stuff?" If yes, you’re good. If no, you’re gonna be very unemployed.
+
+Host 2:
+Also, a quick slap to venture capitalists — if you can’t understand manufacturing, not just SaaS apps, you’re doomed. Future industries aren't built on "move fast and break things" anymore. They’re built on "move heavy stuff and don’t drop it."
+
+Host 1:
+Exactly. And speaking of heavy lifting, there’s a new tool called Chef that helps with AI backend development. Theo dropped it and people are raving — but backend AI problems are still, like, insanely hard. No magic fix.
+
+Host 2:
+Backend’s like the plumbing of AI. No one sees it, but when it breaks, everything smells bad.
+
+Host 1:
+Love that.
+Now switching gears, shoutout to John Coogan. He just went full-time on TBPN, his media company. Dude grinded for five years, from shaky YouTube videos to millions of views, and now he’s doing it full blast.
+
+Host 2:
+Tenacity, man. Everyone wants the success, no one wants the “five years of barely anyone watching” part.
+
+Host 1:
+Facts. Now, real quick on AI adoption — sending out a company-wide "use AI!" email isn't enough. You have to actually change your company around what AI makes possible. It’s not a memo; it’s a rebuild.
+
+Host 2:
+So no more just copying ChatGPT prompts into Slack and calling it "digital transformation?"
+
+Host 1:
+Correct.
+Also, gumloopAI is crushing it. Started with one user at Instacart — now they’ve spread to 10 departments. Word-of-mouth AI adoption is real when the product actually helps.
+
+Host 2:
+One free user becomes a thousand. That’s the new sales funnel.
+
+Host 1:
+Meanwhile, somewhere else, Anthropic says AI employees — like, full AI workers — will start rolling out by 2026. But they’re also warning we need better safeguards fast, or we’re in trouble.
+
+Host 2:
+Love how every new AI headline is either "this will make life magical" or "this will collapse civilization." No in-between.
+
+Host 1:
+Exactly.
+Oh, and Geoff Hinton, basically the godfather of neural nets, says the more we understand how AI and the brain work, the less human thinking looks like logic. We think by resonance, not deduction. We're basically giant pattern-vibe machines.
+
+Host 2:
+So we’re not rational beings. We’re just vibes-based meat computers. Good to know.
+
+Host 1:
+Accurate.
+And on a totally different note — people are dunking on how VCs still can’t explain ARR (Annual Recurring Revenue) properly. It's like "you keep using that word, but I don't think it means what you think it means."
+
+Host 2:
+Imagine raising a $20M Series A and then realizing your investors think ARR stands for "A Really Random number."
+
+Host 1:
+Honestly, not far off.
+Switching topics again — gold has officially outperformed the S&P 500 over the last 20 years. Long-term boring investments? Maybe not so boring.
+
+Host 2:
+Slow and shiny wins the race.
+
+Host 1:
+Love that.
+And before we wrap, one last thing: storytelling is becoming the critical skill in business. If you can’t tell a story that gets people excited — whether it's a startup, a new product, whatever — you’re gonna get left behind.
+
+Host 2:
+Everyone's looking for logic, but it turns out selling a dream is still undefeated.
+
+Host 1:
+Exactly.
+Alright folks, that’s it for today — AI dominance, creative revolutions, manufacturing VCs, backend plumbing, school kids coding before they can spell... the world is moving fast and it’s only getting faster.
+
+Host 2:
+Catch you next time — and remember, if your 8-year-old nephew can engineer a better LLM prompt than you, just hand him the keys and walk away gracefully.

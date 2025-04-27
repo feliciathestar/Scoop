@@ -1,0 +1,26 @@
+Host:
+What’s up, everyone! Welcome back to the show. Today, we are diving deep into the madness that is AI, tech, VCs trying to pretend they understand hardware, and a little dose of kids getting trained in prompt engineering before they even know how to spell. Let’s jump in.
+
+First up — Google just announced new versions of Gemma 3. The model that used to need a nuclear-powered GPU setup? Yeah, now it runs on a single desktop GPU, thanks to something called quantization-aware training, or QAT if you’re feeling fancy. Basically, they figured out how to slim these models down without making them dumb. Huge deal. This is what democratizing AI looks like — bringing heavyweight models to the masses without needing a million-dollar setup.
+
+Now speaking of heavyweights, let’s talk creativity. Somebody out there — and honestly, they might not be wrong — said AI is already more creative than 90% of humans. Right now. Today. Not ten years from now. Today. I mean, look, if we’re talking about TikTok dance trends or yet another startup pitch that’s just Uber but for sandwiches, AI's got that beat hands down.
+
+And while we’re dreaming big, let’s talk corporate soap operas: people are saying it’s only a matter of time before Apple buys OpenAI... or OpenAI buys Apple. Either way, we’re living in a world where trillion-dollar companies are basically just trading places while we all sit around refreshing X waiting for memes about it.
+
+Meanwhile, government stepping in — Trump signed an executive order to ensure American kids are trained in AI from a young age. Because if we're gonna survive this AI future, apparently we need five-year-olds who can prompt engineer better than most middle managers. Honestly? Not the worst move. At the rate we’re going, being AI-literate is gonna be like being literate, period.
+
+Now, over on the career side, Paul Graham dropped some wisdom. He’s basically saying: no, programming isn’t going to disappear, but acting like your job is safe forever is delusional. It’s not just about "can you code" — it’s about "can you figure things out without being handheld." It’s agency or bust.
+
+And while we’re roasting people, VCs are getting dragged hard. Turns out a lot of them can barely understand a SaaS dashboard, let alone the complexities of real-world manufacturing. If the future economy is built on "stuff" — real, physical things — and your investors can’t even explain what a factory is... let’s just say it’s gonna be rough.
+
+On the tech side, shoutout to Theo and the Chef backend. Everyone’s loving it, but also, backend AI problems are still brutally hard. Shared state, consistency, semantics... all the stuff that makes programmers wake up in a cold sweat. No AI is gonna "vibe code" its way through that without serious engineering muscle.
+
+Meanwhile, gumloopAI is quietly eating the world. Started with one free-tier user at Instacart, now they’ve spread across ten departments. Proof that product-led growth is still undefeated if your product actually solves real problems.
+
+And hey, speaking of hustle: John Coogan — yeah, the dude behind TBPN — just went full-time on his media company after years of grinding in the shadows. From zero to millions of views and now taking the leap. Respect. Real builder energy.
+
+Quick sidebar: storytelling. Turns out it’s not "one of many skills" in business anymore. It’s the skill. You can build the greatest thing ever, but if you can’t explain it in a way that hits people in the gut, you’re invisible.
+
+Wrapping up, the vibe overall is clear — AI isn’t the future. It’s the present. You’re either adapting now or you’re gonna get run over by a bunch of AI-native teenagers who can build, prompt, deploy, and tell a better story than you.
+
+Stay sharp out there. Catch you next time.

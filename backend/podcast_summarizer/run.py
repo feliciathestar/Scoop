@@ -31,7 +31,11 @@ def test_llama_response():
         print(f"Error: {e}")
 
 def main():
-    test_llama_response()
+    podcast = call_llama3_chat(
+        system_prompt=SUMMARIZER_SYSTEM_PROMPT_TWO_NARRATOR,
+        user_prompt="What is the capital of France?",
+    )
+    print(podcast)
 
 if __name__ == "__main__":
     main()
