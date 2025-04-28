@@ -1,0 +1,44 @@
+Hey Justin, it’s Scoop — reporting for duty, and today we’re strapping in for a full marathon across the fields of AI innovation, venture chaos, tech dreams, policy pivots, and maybe, just maybe, a little soul-searching on what it all means. So pour yourself a coffee, and let’s get to it.
+
+Starting us off, Gemma 3 just rolled out a new update that seriously shifts the game. This model — once requiring an H100 GPU — can now run on a desktop GPU, thanks to something called Quantization-Aware Training. Basically, they taught the model to pack light without forgetting anything important. It's a major step toward making frontier AI accessible not just to Silicon Valley giants, but to indie hackers and solo founders everywhere. And Justin, you already know: accessibility equals acceleration. Get ready for an explosion of AI-first startups.
+
+Meanwhile, existential reality check: AI is already more creative than 90% of humans. That's today. Right now. Give it a decade, and we may be looking at AI scripting full feature films, designing billion-dollar product lines, and yes — writing better startup pitches than most founders manage today. It’s less about fearing the bots and more about asking: how are you going to be in the 10% that stays irreplaceable?
+
+Speaking of tectonic shifts, people are whispering about Apple buying OpenAI — or OpenAI buying Apple. The idea would have been laughable even three years ago. Now? In an economy where AI is eating the world, and whoever owns the AI layer owns the next fifty years? It almost feels inevitable. Apple needs a generative play, and OpenAI needs hardware at scale. Either way, Justin, imagine your iPhone someday upgrading you instead of you upgrading it.
+
+Zooming into policy: Trump signed an executive order to ensure American kids are trained in AI. Whether you like Trump or not, the logic here is solid. Countries that invest in AI literacy will lead the next industrial revolution. Period. With China pouring billions into AI research, the U.S. really has no choice but to sprint — and this move acknowledges that the race is already well underway.
+
+On the ground level, programmers are facing a new world model. Paul Graham framed it perfectly: the future of coding isn’t about who knows more frameworks. It’s about who acts with agency. Programmers with extreme initiative — people who spot opportunities, prototype them fast, and move — they’re about to 100x. Those waiting to be told what to code? They're going to be "reskilled" by AI bots writing better code faster.
+
+Meanwhile, the venture capital world is being dragged, again, and for good reason. Most VCs still struggle with SaaS basics. Now, manufacturing startups are coming back into vogue — critical for national security, critical for supply chains — and VCs are being asked to understand actual production cycles. Spoiler alert: they don't. This disconnect is going to separate the operators from the tourists very quickly.
+
+Speaking of fundamentals: if you’re a VC or founder, the basics still win. Chase the founder. Respond to emails. Keep your promises. Sequoia doesn't just pick winners — they execute. Being reliable isn't glamorous, but it's undefeated.
+
+Over in the AI tooling world, Chef — a backend tool for AI-first apps — is getting serious attention. Backend is still a nightmare for AI apps because shared state and complex semantics aren’t easily "vibe coded." Chef isn’t a silver bullet, but it’s solving pain points with surgical precision. Developers who master backend are going to own the next generation of AI-enabled products.
+
+Now, a few cultural pulse points:
+
+Companies that survive this shift won't just tell their teams to use AI. They'll rebuild from scratch with AI as the foundation. No memos are going to save you.
+
+Storytelling is the most important business skill. Not "a" skill. The skill. Good stories build companies. Great stories build movements.
+
+Product-led growth continues to quietly dominate. Companies like Gumloop are showing how a single free user can turn into a thousand-seat enterprise deal if your product is magic.
+
+Zooming out: there’s a lot of anxiety about what AI will destroy. Here’s the truth: AI isn’t replacing humans. It's replacing mediocrity. It’s replacing "good enough." It’s replacing "maybe someday." The future belongs to those who move decisively.
+
+There’s also a wave of fresh optimism: from American drone companies poised to fill the vacuum left by Chinese manufacturers being banned, to massive uranium projects kicking off in the U.S. to restart domestic energy production. America, against all odds, is still building — and a lot of it’s happening out of view, far from the hand-wringing headlines.
+
+A little financial PSA: people are leaving serious money on the table parking their cash in basic savings accounts. With tax-adjusted yields from muni money market funds reaching above 5%, you can do a lot better. Might be worth a look, especially with inflation still chipping away quietly.
+
+And before we wrap:
+
+Leadership isn’t about saying "use AI" anymore. It's about showing, living, breathing AI into every process, decision, and product.
+
+Universities may soon shift from demanding Excel proficiency to demanding prompt engineering and model evaluation skills.
+
+And if you’re feeling nostalgic for the days when suits symbolized respect, not subpoena season — well, black tie Fridays in the office are sounding better every day.
+
+Justin, you’re ahead of the curve just by tuning into this stuff. This isn’t just about surviving the future. It’s about shaping it.
+
+That’s it for today’s full deep dive. This is Scoop, signing off. Stay smart, stay scrappy — and most importantly, stay moving.
+Catch you on the next one.

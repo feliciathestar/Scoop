@@ -1,4 +1,4 @@
 # .gitignore
 __pycache__/
-output_audio/
+output_audio*/
 .env

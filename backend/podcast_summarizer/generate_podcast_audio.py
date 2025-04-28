@@ -14,7 +14,66 @@ def read_podcast_script(file_path):
         print(f"Error reading file: {e}")
         sys.exit(1)
 
-def parse_script(script):
+def parse_script_single_speaker(script):
+    """
+    Parse a script with a single speaker without explicit speaker indicators.
+    Breaks the text into manageable segments for TTS processing.
+    
+    Args:
+        script (str): The podcast script content
+        
+    Returns:
+        list: A list of segments, each being a dict with "speaker" and "text" keys
+    """
+    # Split by paragraphs (empty lines)
+    paragraphs = [p.strip() for p in script.split('\n\n') if p.strip()]
+    segments = []
+    
+    # Maximum character length for each segment
+    # Limiting segment size to avoid TTS limitations
+    max_segment_length = 1000
+    
+    for paragraph in paragraphs:
+        # If the paragraph is too long, break it into smaller segments
+        if len(paragraph) > max_segment_length:
+            # Break by sentences (roughly)
+            sentences = []
+            # Split by common sentence endings followed by a space and capital letter
+            for part in paragraph.replace('. ', '.|').replace('? ', '?|').replace('! ', '!|').split('|'):
+                if part:
+                    sentences.append(part)
+            
+            current_segment = ""
+            for sentence in sentences:
+                # If adding this sentence would make the segment too long
+                if len(current_segment) + len(sentence) > max_segment_length and current_segment:
+                    segments.append({
+                        "speaker": "Host",
+                        "text": current_segment.strip()
+                    })
+                    current_segment = sentence
+                else:
+                    if current_segment:
+                        current_segment += " " + sentence
+                    else:
+                        current_segment = sentence
+            
+            # Add the last segment if there's any text left
+            if current_segment:
+                segments.append({
+                    "speaker": "Host",
+                    "text": current_segment.strip()
+                })
+        else:
+            # Paragraph is short enough to be a segment on its own
+            segments.append({
+                "speaker": "Host",
+                "text": paragraph
+            })
+    
+    return segments
+
+def parse_script_multi_speaker(script):
     """Parse the script to separate by speaker."""
     lines = script.split('\n')
     segments = []
@@ -71,7 +130,7 @@ def generate_audio_openai(segments, output_folder="output_audio"):
     
     for i, segment in enumerate(segments):
         # Get voice settings for the current speaker
-        voice_settings = host_voices.get(segment["speaker"], {"voice": "alloy", "instructions": None})
+        voice_settings = host_voices.get(segment["speaker"], {"voice": "onyx", "instructions": "Speak casually, like two friend conversing with each other over lunch. Don't overdo emotions. Speak at an overall faster rate."})
         
         output_path = os.path.join(output_folder, f"segment_{i:03d}.mp3")
         print(f"Generating audio for {segment['speaker']} (segment {i+1}/{len(segments)})...")
@@ -170,7 +229,12 @@ def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     
     # File paths
-    script_path = os.path.join(script_dir, "two_podcast.txt")
+    script_path = os.path.join(script_dir, "two_podcast.txt")  # Default to two_podcast.txt
+    
+    # Check if a specific podcast file is provided as an argument
+    if len(sys.argv) > 1 and sys.argv[1] in ["one", "two"]:
+        script_path = os.path.join(script_dir, f"{sys.argv[1]}_podcast.txt")
+    
     output_folder = os.path.join(script_dir, "output_audio")
     
     # Check if the file exists
@@ -178,10 +242,19 @@ def main():
         print(f"Error: The podcast script file '{script_path}' does not exist.")
         sys.exit(1)
     
-    # Read and parse the script
+    # Read the script
     print(f"Reading podcast script from: {script_path}")
     script = read_podcast_script(script_path)
-    segments = parse_script(script)
+    
+    # Determine which parser to use based on the filename
+    is_single_speaker = "one_podcast.txt" in script_path
+    
+    if is_single_speaker:
+        print("Detected single-speaker format, using single speaker parser...")
+        segments = parse_script_single_speaker(script)
+    else:
+        print("Detected multi-speaker format, using multi-speaker parser...")
+        segments = parse_script_multi_speaker(script)
     
     if not segments:
         print("Error: No segments found in the podcast script. Check the format.")
